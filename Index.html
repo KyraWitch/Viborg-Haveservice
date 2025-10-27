@@ -1,15 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Stylesheet-VH.cs">
+    <link rel="stylesheet" href="Stylesheet-VH.css">
 </head>
+
 <body>
 
+    <!--What needs doing-->
+    <!--
+    - Nav bar 1 title 5 nav points
+    - Pic div at the top that fills the screen and the nav bar is at the top with title,text and button in the middle
+    - Flex div 
+        right flex div with 2 divs 1 pics with 1 title and 1 text per in a row
+        left title text with list and button in a column
+    - Green background div with title text flex row div with 4 pics and 1text 1 title per
+    - galleri div 9 pics in a row with flexwrap 1 title 1 text 4 buttons
+    - feedbak div1 title 1 text slideshow?
+    - kontact div1 title 1 text 3 titles 3 text and form at the bottom
+    -footer 2 pics 
+    -->
 
-    
-    
+    <main>
+        <!--Top,Nav and img Div Nth1-->
+        <div>
+            <!--Background image-->
+            <div>
+                <img src="Billedmaterialer/banner-bg.jpg" alt="Nav area Background picture">
+            </div>
+
+            <!--NavBar-->
+            <div>
+                <nav>
+                    <!--Title-->
+                    <div>
+                        <h3>
+                            Viborg Haveservice
+                        </h3>
+                    </div>
+                    <!--List item 1-->
+                    <ul>
+                        <li>
+                            <a href="#om-os">OM OS</a>
+                        </li>
+                        <!--List item 2-->
+                        <li>
+                            <a href="#Ydelser">YDELSER</a>
+                        </li>
+                        <!--List item 3-->
+                        <li>
+                            <a href="#Galleri">GALLERI</a>
+                        </li>
+                        <!--List item 4-->
+                        <li>
+                            <a href="#Feedback">DET SIGER KUNDERNE</a>
+                        </li>
+                        <!--List item 5-->
+                        <li>
+                            <a href="#Kontakt">KONATKT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Text in middle+button-->
+            <div>
+                <div>
+                    <!--Title-->
+                    <h1>
+                        KVALITET OG SERVICE
+                    </h1>
+                    <!--Text-->
+                    <p>
+                        Hos Viborg Haveservice bliver kvalitet og service sat i højsædet. <br>
+                        Vi sætter stor ære og pris på at tilbyde
+                        <!--Said Tilbyder but is a grammar mistake so i fixed it-->
+                        professionel haveservice til både <br>
+                        private og erhverv
+                    </p>
+                </div>
+                <!--Button-->
+                <div>
+                    <button>
+                        LÆS MERE
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--Velkommen til VH div-->
+        <div id="om-os">
+
+            <!--Left-->
+            <div>
+                <!--Title-->
+                <h2>
+                    Velkommen til <p>Viborg <br>Haveservice</p>
+                </h2>
+
+                <!--Text+List-->
+                <div>
+                <p>
+                    Hos Viborg Haveservice er vi en virksomhed, som varetager en bred skare af forskellige
+                    arbejdsopgaver
+                    inden for havearbejde og kan blandt andet hjælpe til med:
+                </p>
+                <ul>
+                    <!--Text Li 1-->
+                    <li>
+                        Hækklipning
+                    </li>
+                    <!--Text Li 2-->
+                    <li>
+                        Græsslåning
+                    </li>
+                    <!--Text Li 3-->
+                    <li>
+                        Træfældning
+                    </li>
+                    <!--Text Li 4-->
+                    <li>
+                        Belægning
+                    </li>
+                </ul>
+                <p>
+                Kort og godt er vi de rette at kontakte ved enhver type af opgave inden for haveservice, og med mange
+                års
+                erfaring i faget, kan du trygt lade dit valg falde på netop os.
+                </p>
+                </div>
+                <div>
+                    <button>
+                        SE ALLE YDELSER
+                    </button>
+                </div>
+            </div>
+
+            <!--Right-->
+            <div>
+                <div>
+                    <!--Left pic-->
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <!--Text Left-->
+                    <div>
+                        <h4>
+                            Anlægsgardneri
+                        </h4>
+                        <p>
+                            Den fulde pakke for virksomheder der ikke har tid til at passe sinde udendørsarealer.
+                        </p>
+                    </div>
+                </div>
+                <!--Right pic-->
+                <div>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <!--Text Right-->
+                    <div>
+                        <h4>
+                            Plænepleje
+                        </h4>
+                        <p>
+                            For den private som ønsker en plan og flot græsplæne-.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Ydelser Area, Flex (Vores Ydelser)-->
+        <div id="Ydelser">
+            <!--Title + text-->
+            <div>
+                <h3>
+                    Vores ydelser
+                </h3>
+                <p>
+                    Herunder en oversigt over alle vores services. <br>
+                    Hvis du måtte have flere spørgsmål, er du velkommen til at kontakte os.
+                </p>
+            </div>
+
+            <!--Flexbox-->
+            <div>
+                <!--Flexitems-->
+
+                <!--Flex Item 1-->
+                <div>
+                    <!--Image-->
+                    <div>
+                        <img src="Billedmaterialer/ydelser/ydelser-1.jpg" alt="">
+                    </div>
+                    <!--Text-->
+                    <div>
+                        <h4>
+                            Plænepleje
+                        </h4>
+                        <p>
+                            Vi påtager os at passe plænen for dig, og håndterer alt såning, gødning, kalking og
+                            klipning.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Flex Item 2-->
+                <div>
+                    <!--Image-->
+                    <div>
+                        <img src="Billedmaterialer/ydelser/ydelser-2.jpg" alt="">
+                    </div>
+                    <!--Text-->
+                    <div>
+                        <h4>
+                            Anlægsgardneri
+                        </h4>
+                        <p>
+                            Vi håntere akt udensdørs areal for din virksomhed, såsom flisepleje, behandling af bede,
+                            plæner og snerydning om vintern.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Flex Item 3-->
+                <div>
+                    <!--Image-->
+                    <div>
+                        <img src="Billedmaterialer/ydelser/ydelser-3.jpg" alt="">
+                    </div>
+                    <!--Text-->
+                    <div>
+                        <h4>
+                            Træpleje
+                        </h4>
+                        <p>
+                            Vi sørger for at dine træer bliver behandlet og beskåret hele året rundt.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Flex Item 4-->
+                <div>
+                    <!--Image-->
+                    <div>
+                        <img src="Billedmaterialer/ydelser/ydelser-4.jpg" alt="">
+                    </div>
+                    <!--Text-->
+                    <div>
+                        <h4>
+                            Forår og efterårsrengørning
+                        </h4>
+                        <p>
+                            Vi gør haven klar til sommerbrug og fjerner løvfald for dig om efteråret.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!--Galleri Area-->
+        <div id="Galleri">
+
+        </div>
+
+        <!--Feedback Area-->
+        <div id="Feedback">
+
+        </div>
+
+        <!--Contact Area-->
+        <div id="Kontakt">
+
+        </div>
+
+        <!--Footer Area-->
+        <div>
+
+        </div>
+    </main>
 </body>
+
 </html>

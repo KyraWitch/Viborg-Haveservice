@@ -1,0 +1,270 @@
+/*Virborg Haveservice*/
+
+/*Colour vars*/
+:root {
+    --primary-bgc: #f6f6f6;
+    --primary-tc: #a5a5a5;
+    --title-tc: #cad3ce;
+    --secondary-tc: #e6e6e6;
+    --primary-green: #6aaf09;
+    --footer-colour: #333333;
+}
+
+/*Global Selectors*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*Main*/
+main {
+
+
+    /*Top image nav bar*/
+    &>:nth-child(1) {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        /*Image*/
+        &>:nth-child(1) {
+            width: inherit;
+            height: inherit;
+            position: relative;
+
+            &>img {
+                width: inherit;
+                object-fit: cover;
+                height: auto;
+                image-rendering: optimizeQuality;
+                image-rendering: crisp-edges;
+                filter: brightness(0.8) contrast(0.9) saturate(1.2);
+
+            }
+
+
+        }
+
+        /*Navbar*/
+        &>:nth-child(2) {
+            position: absolute;
+            top: 40px;
+            width: 100%;
+
+            &>nav {
+                display: flex;
+                width: 100%;
+                justify-self: center;
+
+                /*Title*/
+                &>:first-child {
+                    justify-self: left;
+                    width: 40%;
+                    color: var(--primary-bgc);
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+
+                /*nav Items*/
+                &>ul {
+                    display: flex;
+                    list-style: none;
+                    text-decoration: none;
+                    width: 50%;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-self: center;
+
+
+                    &>li {
+                        font-size: 1rem;
+
+                        &>a {
+                            color: var(--secondary-tc);
+                            text-decoration: none;
+                        }
+                    }
+
+                    &>li:hover {
+                        &>a:hover {}
+                    }
+
+                }
+            }
+
+        }
+
+        /*Title and text*/
+        &>:nth-child(3) {
+            position: absolute;
+            bottom: 400px;
+            justify-self: center;
+            justify-items: center;
+
+            &>:first-child {
+                &>h1 {
+                    color: var(--primary-bgc);
+                    font-size: 4rem;
+                }
+
+                &>p {
+                    color: var(--primary-bgc);
+                    text-align: center;
+                    font-size: 1.4rem;
+                    padding-top: 20px;
+                    padding-bottom: 60px;
+                }
+            }
+
+            /*Button*/
+            &>:last-child {
+                background-color: var(--primary-green);
+                height: 60px;
+                width: 145px;
+                align-content: center;
+                text-align: center;
+                border-radius: 3px;
+
+                &>button {
+                    background-color: inherit;
+                    border: none;
+                    color: white;
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
+    }
+
+    /*Top end*/
+
+    /*Velkommen til VH*/
+    &>:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-color: var(--primary-bgc);
+        width: 100%;
+        height: auto;
+        padding-top: 125px;
+
+
+
+        margin-bottom: 1000px;
+
+        /*Left*/
+        &>:nth-child(1) {
+            width: 50%;
+            padding-left: 50px;
+
+            /*Title*/
+            &>h2 {
+                font-size: 2.5rem;
+                font-weight: 400;
+
+                &>p {
+                    display: inline;
+                    font-size: inherit;
+                    font-weight: 600;
+                    color: var(--primary-green);
+                }
+            }
+
+            /*Text+List*/
+            &>:nth-child(2) {
+                padding-top: 60px;
+                font-size: 1rem;
+                color: slategray;
+                display: flex;
+                flex-direction: column;
+                line-height: 1.5;
+
+                &>ul {
+                    list-style: circle;
+                    padding: 0;
+                    padding-left: 17px;
+                    padding-top: 10px;
+                    padding-bottom: 15px;
+
+                    &>li {
+                        color: slategray;
+                    }
+                }
+            }
+
+            &>:last-child {
+                &>button {}
+            }
+        }
+
+        /*Pic items*/
+        &>:nth-child(1),
+        :nth-child(2) {
+
+            /*Left Item*/
+            &>:first-child {
+
+                /*Image*/
+                &>:first-child {
+                    &>img {}
+                }
+
+                /*Title and text*/
+                &>:last-child {
+                    &>h4 {}
+
+                    &>p {}
+                }
+            }
+
+        }
+
+    }
+
+    /*Vores Ydelser*/
+    &>:nth-child(3) {
+
+        /*Title and text*/
+        &>:first-child {
+            &>h3 {}
+
+            &>p {}
+        }
+
+        /*Flexbox*/
+        &>:last-child {
+
+            /*Flex Items*/
+            &>:nth-child(1),
+            :nth-child(2),
+            :nth-child(3),
+            :nth-child(4) {
+
+                /*Flex Imgs*/
+                &>:first-child {
+                    &>img {}
+                }
+
+                /*Text*/
+                &>:last-child {
+                    &>h4 {}
+
+                    &>p {}
+                }
+            }
+
+
+        }
+
+
+
+    }
+
+
+    /*Missing Galleri,Feedback,Contact and footer*/
+
+
+
+}
