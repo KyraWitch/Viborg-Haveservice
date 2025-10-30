@@ -49,9 +49,10 @@ main {
 
         /*Navbar*/
         &>:nth-child(2) {
-            position: absolute;
+            position: fixed;
             top: 40px;
             width: 100%;
+            z-index: 2;
 
             &>nav {
                 display: flex;
@@ -89,7 +90,9 @@ main {
                     }
 
                     &>li:hover {
-                        &>a:hover {}
+                        &>a:hover {
+                            color: blueviolet;
+                        }
                     }
 
                 }
@@ -100,7 +103,7 @@ main {
         /*Title and text*/
         &>:nth-child(3) {
             position: absolute;
-            bottom: 400px;
+            top: 35%;
             justify-self: center;
             justify-items: center;
 
@@ -458,39 +461,67 @@ main {
 
     /*Feedback Area*/
     &>:nth-child(5) {
+        position: relative;
+        margin-top: 150px;
 
         /*Image*/
         &>:nth-child(1) {
             width: 100%;
-            height: auto;
+            height: 100%;
+            position: relative;
 
             &>img {
-                width: 100%;
-                height: auto;
+                max-width: 100%;
+                height: 100%;
                 object-fit: cover;
+                z-index: -1;
+                position: relative;
+            }
+
+            /*Image background colour*/
+            &>:nth-child(2) {
+                background-color: #70ad12;
+                opacity: 0.5;
+                width: 100%;
+                height: 99.7%;
+                z-index: 1;
+                position: absolute;
+                top: 0%;
             }
         }
 
-        /*Image background colour*/
-        &>:nth-child(2){
-            background-color: #6aaf09;
-            opacity: 0.4;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-        }
+
 
         /*Title+Line+Text*/
-        &>:nth-child(3) {
+        &>:nth-child(2) {
+            position: absolute;
+            top: 25%;
+            text-align: center;
+            justify-self: center;
+            color: white;
+            z-index: 2;
 
             /*Title*/
-            &>h3 {}
+            &>h3 {
+                font-size: 4rem;
+                font-weight: 200;
+            }
 
             /*Line*/
-            &>:nth-child(2) {}
+            &>:nth-child(2) {
+                border-top: 2px white solid;
+                width: 10%;
+                margin-top: 25px;
+                justify-self: center;
+                margin-bottom: 125px;
+            }
 
             /*Text*/
-            &>p {}
+            &>p {
+                font-size: 1.5rem;
+
+
+            }
 
         }
     }
@@ -498,35 +529,79 @@ main {
 
     /*Contact Area*/
     &>:nth-child(6) {
+        position: relative;
+        padding-bottom: 150px;
+        padding-top: 150px;
+        background-color: var(--primary-bgc);
 
         /*Title, Line And text*/
         &>:nth-child(1) {
-            &>h2 {}
+            text-align: center;
+            margin-bottom: 100px;
+
+            /*Title*/
+            &>h2 {
+                font-size: 3.5rem;
+                color: darkslategray;
+            }
 
             /*Line*/
-            &>:nth-child(2) {}
+            &>:nth-child(2) {
+                border-top: 3px var(--primary-green) solid;
+                width: 5%;
+                margin-top: 25px;
+                justify-self: center;
+                margin-bottom: 25px;
+            }
 
             /*Text*/
-            &>p {}
+            &>p {
+                color: slategray;
+                font-weight: 500;
+                font-size: 1.5rem;
+            }
 
         }
 
         /*Flexbox*/
         &>:nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 100px;
+            width: 80%;
+            justify-self: center;
 
             /*Flex items*/
             &>:nth-child(1),
             :nth-child(2),
             :nth-child(3) {
+                text-align: center;
+                width: 20%;
 
                 /*Title*/
-                &>h3 {}
+                &>h3 {
+                    font-weight: 600;
+                    color: darkslategray;
+                }
 
                 /*Line*/
-                &>:nth-child(2) {}
+                &>:nth-child(2) {
+                    border-top: 2px var(--primary-green) solid;
+                    width: 30%;
+                    margin-top: 10px;
+                    justify-self: center;
+                    margin-bottom: 20px;
+                }
+
 
                 /*Text*/
-                &>p {}
+                &>p {
+                    width: 100%;
+                    line-height: 2.25;
+                    color: darkslategray;
+                    font-weight: 400;
+                }
 
             }
 
@@ -536,20 +611,71 @@ main {
 
         /*Title*/
         &>:nth-child(3) {
-            &>h2 {}
+            text-align: center;
+            margin-bottom: 80px;
+
+            /*Title*/
+            &>h2 {
+                color: darkslategray;
+            }
         }
 
         /*Form*/
         &>form {
+            display: flex;
+            width: 80%;
+            justify-self: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
 
             /*Input 1 and 2*/
-            &>input {}
+            &>:nth-child(1),
+            :nth-child(2) {
+                width: 40%;
+                margin-right: 20px;
+                margin-left: 20px;
+
+                &>input {
+                    width: 100%;
+                    height: 50px;
+                    padding-left: 10px;
+                    font-size: 1rem;
+
+                }
+            }
 
             /*Textarea*/
-            &>Textarea {}
+            &>:nth-child(3) {
+                margin-top: 25px;
+                width: 83%;
+
+                &>textarea {
+                    width: 100%;
+                    height: 200px;
+                    padding-top: 25px;
+                    padding-left: 15px;
+                    font-size: 1.1rem;
+                }
+            }
 
             /*Button*/
-            &>button {}
+            &>:nth-child(4) {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+
+                &>button {
+                    width: 15%;
+                    border: none;
+                    background-color: var(--primary-green);
+                    height: 60px;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 1.2rem;
+                }
+            }
         }
 
 
